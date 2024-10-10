@@ -2,6 +2,7 @@
 "use client";
 import React, { useRef } from "react";
 import { useScroll, useTransform, motion, MotionValue } from "framer-motion";
+import { IconBrandGithub, IconBrandLinkedin, IconMail } from "@tabler/icons-react";
 
 export const ContainerScroll = ({
     titleComponent,
@@ -37,11 +38,11 @@ export const ContainerScroll = ({
 
     return (
         <div
-            className="h-[60rem] md:h-[80rem] flex items-center justify-center relative p-2 md:p-20"
+            className="h-[60rem] md:h-[80rem] flex items-center justify-center relative p-2 md:p-20 z-[600] bg-black flex-col"
             ref={containerRef}
         >
             <div
-                className="py-10 md:py-40 w-full relative"
+                className="py-10 md:py-40 w-full relative "
                 style={{
                     perspective: "1000px",
                 }}
@@ -50,6 +51,12 @@ export const ContainerScroll = ({
                 <Card rotate={rotate} translate={translate} scale={scale}>
                     {children}
                 </Card>
+            </div>
+            <div className="flex justify-evenly items-center">
+                <a href="https://www.linkedin.com/in/kritika-singh-1634b322a/" className=" text-yellow-300 hover:text-white" target="_blank"><IconBrandLinkedin /></a>
+                <a href="https://github.com/Kritikasingh2004" target="_blank" className=" text-yellow-300 hover:text-white mx-4"><IconBrandGithub /></a>
+                <a href="mailto:kritikasingh00.com@gmail.com" className="text-yellow-300 hover:text-white" target="_blank"><IconMail /></a>
+
             </div>
         </div>
     );

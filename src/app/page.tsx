@@ -3,11 +3,13 @@ import ContactSection from "@/components/ContactSection";
 import FooterSection from "@/components/FooterSection";
 import HeroSection from "@/components/HeroSection";
 import ProjectSection from "@/components/ProjectSection";
+import NavbarSection from "@/components/ui/NavbarSection";
 import ProjectItems from "@/components/ui/ProjectItems";
 
 export default function Home() {
   return (
     <>
+      <NavbarSection />
       <HeroSection />
       {/* find a skill table */}
       <AboutSection />

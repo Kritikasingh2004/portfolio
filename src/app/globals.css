@@ -20,6 +20,11 @@ body {
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
+*::selection {
+  color: black;
+  background: #ebd649;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

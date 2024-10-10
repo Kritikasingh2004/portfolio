@@ -20,7 +20,7 @@ const ProjectItems = () => {
             <Image
                 src={star}
                 alt='star'
-                className='w-full absolute bottom-0 z-0 h-full animate-flicker'
+                className='w-full absolute bottom-0 z-0 h-full animate-pulse'
             />
             <BentoGrid className="max-w-4xl mx-auto">
                 {items.map((item, i) => (

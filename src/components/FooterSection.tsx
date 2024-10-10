@@ -6,13 +6,13 @@ import bill from "../app/assets/bill.png";
 
 const FooterSection = () => {
     return (
-        <div className="flex flex-col overflow-hidden bg-black">
+        <div className="flex flex-col overflow-hidden bg-black z-[600]">
             <ContainerScroll
                 titleComponent={
                     <>
-                        <h1 className="text-4xl font-semibold text-black dark:text-white">
+                        <h1 className="text-4xl font-semibold text-yellow-300">
                             That&apos;s all about me <br />
-                            <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
+                            <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none text-white">
                                 Always Remember
                             </span>
                         </h1>
@@ -28,6 +28,7 @@ const FooterSection = () => {
                     draggable={false}
                 />
             </ContainerScroll>
+
         </div>
     );
 }

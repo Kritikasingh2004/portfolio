@@ -8,10 +8,10 @@ export function SkillPreview() {
                 {grid.map((feature) => (
                     <div
                         key={feature.title}
-                        className="relative bg-gradient-to-b dark:from-neutral-900 from-neutral-100 dark:to-neutral-950 to-white p-6 rounded-3xl overflow-hidden"
+                        className="relative bg-gradient-to-b dark:from-neutral-900 from-neutral-100 dark:to-neutral-950 to-white p-6 rounded-3xl overflow-hidden hover:shadow-[0_0_10px_rgba(253,224,71,1)] hover:border-yellow-300 transition-shadow duration-300 cursor-pointer"
                     >
                         <Grid size={20} />
-                        <p className="text-base font-bold text-neutral-800 dark:text-white relative z-20">
+                        <p className="text-base font-bold text-yellow-300 relative z-20">
                             {feature.title}
                         </p>
                         <p className="text-neutral-600 dark:text-neutral-400 mt-4 text-base font-normal relative z-20">
@@ -26,44 +26,64 @@ export function SkillPreview() {
 
 const grid = [
     {
-        title: "HIPAA and SOC2 Compliant",
+        title: "NextJs",
         description:
-            "Our applications are HIPAA and SOC2 compliant, your data is safe with us, always.",
+            "I have made some projects on NextJs just like this portfolio.",
     },
     {
-        title: "Automated Social Media Posting",
+        title: "ReactJs",
         description:
-            "Schedule and automate your social media posts across multiple platforms to save time and maintain a consistent online presence.",
+            "Since you have to know ReactJs to work with NextJs, I know ReactJs too.",
     },
     {
-        title: "Advanced Analytics",
+        title: "TailwindCSS",
         description:
-            "Gain insights into your social media performance with detailed analytics and reporting tools to measure engagement and ROI.",
+            "I have used TailwindCSS in this portfolio and I literally love it.",
     },
     {
-        title: "Content Calendar",
+        title: "Firebase",
         description:
-            "Plan and organize your social media content with an intuitive calendar view, ensuring you never miss a post.",
+            "I have used Firebase for authentication and database some of my projects.",
     },
     {
-        title: "Audience Targeting",
+        title: "Appwrite",
         description:
-            "Reach the right audience with advanced targeting options, including demographics, interests, and behaviors.",
+            "I am still a beginner in this but I am learning it.",
     },
     {
-        title: "Social Listening",
+        title: "Bootstrap",
         description:
-            "Monitor social media conversations and trends to stay informed about what your audience is saying and respond in real-time.",
+            "I have used Bootstrap in some of my projects.",
     },
     {
-        title: "Customizable Templates",
+        title: "GitHub",
         description:
-            "Create stunning social media posts with our customizable templates, designed to fit your brand's unique style and voice.",
+            "Who doesn't know GitHub? I have used it in all of my projects.",
     },
     {
-        title: "Collaboration Tools",
+        title: "Python",
         description:
-            "Work seamlessly with your team using our collaboration tools, allowing you to assign tasks, share drafts, and provide feedback in real-time.",
+            "I am doing dsa in python.",
+    },
+    {
+        title: "VueJs",
+        description:
+            "I have worked on a few projects based on VueJs.",
+    },
+    {
+        title: "Figma",
+        description:
+            "I know how to use it.",
+    },
+    {
+        title: "Html/ Css",
+        description:
+            "These are the basics of web development.",
+    },
+    {
+        title: "Javascript",
+        description:
+            "I have a nice understanding of Javascript.",
     },
 ];
 
@@ -90,7 +110,7 @@ export const Grid: React.FC<GridProps> = ({ pattern, size }) => {
                     x="-12"
                     y="4"
                     squares={p}
-                    className="absolute inset-0 h-full w-full  mix-blend-overlay dark:fill-white/10 dark:stroke-white/10 stroke-black/10 fill-black/10"
+                    className="absolute inset-0 h-full w-full  mix-blend-overlay dark:fill-white/10 dark:stroke-white/10 stroke-black/10 fill-black/10 "
                 />
             </div>
         </div>
