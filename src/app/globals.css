@@ -16,7 +16,8 @@
 
 body {
   color: var(--foreground);
-  background: #fff;
+  background: black;
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 @layer utilities {

@@ -1,35 +1,36 @@
 import Image from 'next/image'
-import bill from "../app/assets/bill.png"
+import darkbill from "../app/assets/evilbill.jpg"
 import about from "../app/assets/about.png"
+import { SkillPreview } from './ui/SkillPreview'
 
 const AboutSection = () => {
     return (
         <div>
-            <div className='w-full min-h-screen bg-gradient-to-b from-[#0f0801] to-transparent flex items-center justify-center'>
+            <div className='w-full min-h-screen  flex items-center justify-center'>
 
                 <div className='flex justify-center w-full'>
-                    <Image
-                        src={about}
-                        alt='collector'
-                        height={500}
-                        width={500}
-                        className='w-[50%]'
-                    />
+                    <div className='flex flex-col w-1/2'>
+                        <Image
+                            src={about}
+                            alt='collector'
+                            className='w-[60%]'
+                        />
+                        <p className='px-6'>
+                            Hi im me and Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nesciunt sunt laudantium earum! Incidunt fuga doloribus nobis amet aliquid corrupti numquam error modi culpa.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div className='w-full min-h-screen bg-gradient-to-b from-transparent to-black flex items-center justify-center'>
+            <div className='w-full min-h-screen  flex items-center justify-between'>
                 <div className='flex justify-end w-[30%]'>
                     <Image
-                        src={bill}
+                        src={darkbill}
                         alt='collector'
-                        height={500}
-                        width={500}
-                        className='w-[90%]'
+                        className='w-[100%]'
                     />
                 </div>
-                <div className='flex justify-center w-[70%]'>
-                    <span className='text-black'>Here are some skills I possess.</span>
-
+                <div className='flex flex-col items-center justify-center w-[65%]'>
+                    <SkillPreview />
                 </div>
             </div>
 
