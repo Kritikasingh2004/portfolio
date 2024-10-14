@@ -6,9 +6,6 @@ import vaccitime from "../../app/assets/projects/vaccitime.png"
 import codefiesta from "../../app/assets/projects/codefiesta.png"
 import hiresum from "../../app/assets/projects/hiresum.png"
 import chatbot from "../../app/assets/projects/chatbot.png"
-import ideathon from "../../app/assets/projects/ideathon.png"
-import calnova from "../../app/assets/projects/calnova.png"
-import campus from "../../app/assets/projects/ambassdor.png"
 
 import { BentoGrid, BentoGridItem } from "../ui/bento-grid";
 
@@ -86,30 +83,6 @@ const items = [
         headerUrl: "https://github.com/Kritikasingh2004/chatbot-app.git",
     },
     {
-        title: "Ideathon Website",
-        description: "Website for a event at Lucknow University.",
-        header: ideathon,
-        tags: ["Html", "CSS"],
-        url: "https://kritikasingh2004.github.io/ideathon/",
-        headerUrl: "https://github.com/Kritikasingh2004/ideathon.git",
-    },
-    {
-        title: "CalNova",
-        description: "A GST calculator.",
-        header: calnova,
-        tags: ["Html", "CSS", "JS"],
-        url: "https://kritikasingh2004.github.io/CalNova_Gst_calculator/",
-        headerUrl: "https://github.com/Kritikasingh2004/CalNova_Gst_calculator.git",
-    },
-    {
-        title: "Campus Ambassador Website",
-        description: "Website to apply for campus ambassador for Ecell at Lucknow University.",
-        header: campus,
-        tags: ["Html", "CSS", "JS"],
-        url: "https://kritikasingh2004.github.io/campus_ambassador_ecell/",
-        headerUrl: "https://github.com/Kritikasingh2004/campus_ambassador_ecell.git",
-    },
-    {
         title: "Work on progress",
         description: "Its a website that gives you remainder to solve your daily coding problems.",
         tags: ["NextJS", "TailwindCSS", "Appwrite"],
@@ -118,7 +91,7 @@ const items = [
     },
     {
         title: "Coding Soon...",
-        description: "Let me cook...",
+        description: "Let me cook...For more project see my github profile.",
         tags: ["Project"],
         url: "",
         headerUrl: "",
