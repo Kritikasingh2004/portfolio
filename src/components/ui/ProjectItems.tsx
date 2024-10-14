@@ -1,17 +1,16 @@
 import React from 'react'
 import star from "../../app/assets/starbg.png"
 import Image from 'next/image'
+import kaizenyou from "../../app/assets/projects/kaizenyou.png"
+import vaccitime from "../../app/assets/projects/vaccitime.png"
+import codefiesta from "../../app/assets/projects/codefiesta.png"
+import hiresum from "../../app/assets/projects/hiresum.png"
+import chatbot from "../../app/assets/projects/chatbot.png"
+import ideathon from "../../app/assets/projects/ideathon.png"
+import calnova from "../../app/assets/projects/calnova.png"
+import campus from "../../app/assets/projects/ambassdor.png"
 
 import { BentoGrid, BentoGridItem } from "../ui/bento-grid";
-import {
-    IconArrowWaveRightUp,
-    IconBoxAlignRightFilled,
-    IconBoxAlignTopLeft,
-    IconClipboardCopy,
-    IconFileBroken,
-    IconSignature,
-    IconTableColumn,
-} from "@tabler/icons-react";
 
 
 const ProjectItems = () => {
@@ -29,7 +28,9 @@ const ProjectItems = () => {
                         title={item.title}
                         description={item.description}
                         header={item.header}
-                        icon={item.icon}
+                        tags={item.tags}
+                        headerUrl={item.headerUrl}
+                        url={item.url}
                         className={i === 3 || i === 6 ? "md:col-span-2" : ""}
                     />
                 ))}
@@ -41,51 +42,86 @@ const ProjectItems = () => {
 export default ProjectItems
 
 
-const Skeleton = () => (
-    <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
-);
+
 const items = [
+
     {
-        title: "The Dawn of Innovation",
-        description: "Explore the birth of groundbreaking ideas and inventions.",
-        header: <Skeleton />,
-        icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+        title: "KaizenYou Website",
+        description: "The official website for a edtech startup KaizenYou.",
+        header: kaizenyou,
+        tags: ["NextJS", "TailwindCSS", "GSAP"],
+        url: "https://www.kaizenyou.in/",
+        headerUrl: "https://github.com/Kritikasingh2004/kaizenyou.git",
     },
     {
-        title: "The Digital Revolution",
-        description: "Dive into the transformative power of technology.",
-        header: <Skeleton />,
-        icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
+        title: "CodeFiesta Website",
+        description: "Website made for a tech fest at Lucknow University.",
+        header: codefiesta,
+        tags: ["VueJS", "Bootstrap"],
+        url: "https://codefiesta-chi.vercel.app/",
+        headerUrl: "https://github.com/Kritikasingh2004/codefiesta.git",
     },
     {
-        title: "The Art of Design",
-        description: "Discover the beauty of thoughtful and functional design.",
-        header: <Skeleton />,
-        icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
+        title: "VacciTime",
+        description: "A website to remind you about your child's vaccination schedule.",
+        header: vaccitime,
+        tags: ["Firebase", "NextJS", "TailwindCSS"],
+        url: "https://vacci-time.vercel.app/",
+        headerUrl: "https://github.com/Kritikasingh2004/Vacci-Time.git",
     },
     {
-        title: "The Power of Communication",
-        description:
-            "Understand the impact of effective communication in our lives.",
-        header: <Skeleton />,
-        icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+        title: "HireSum FrontEnd",
+        description: "FrontEnd of a website for hiring candidates.",
+        header: hiresum,
+        tags: ["ReactJS", "CSS"],
+        url: "https://kritikasingh2004.github.io/hiresum/",
+        headerUrl: "https://github.com/Kritikasingh2004/hiresum.git",
     },
     {
-        title: "The Pursuit of Knowledge",
-        description: "Join the quest for understanding and enlightenment.",
-        header: <Skeleton />,
-        icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
+        title: "ChatBot Frontend",
+        description: "FrontEnd for a image based chatbot.",
+        header: chatbot,
+        tags: ["NextJS", "TailwindCSS", "Aceternity UI"],
+        url: "https://chatbot-app-livid.vercel.app/",
+        headerUrl: "https://github.com/Kritikasingh2004/chatbot-app.git",
     },
     {
-        title: "The Joy of Creation",
-        description: "Experience the thrill of bringing ideas to life.",
-        header: <Skeleton />,
-        icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500" />,
+        title: "Ideathon Website",
+        description: "Website for a event at Lucknow University.",
+        header: ideathon,
+        tags: ["Html", "CSS"],
+        url: "https://kritikasingh2004.github.io/ideathon/",
+        headerUrl: "https://github.com/Kritikasingh2004/ideathon.git",
     },
     {
-        title: "The Spirit of Adventure",
-        description: "Embark on exciting journeys and thrilling discoveries.",
-        header: <Skeleton />,
-        icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
+        title: "CalNova",
+        description: "A GST calculator.",
+        header: calnova,
+        tags: ["Html", "CSS", "JS"],
+        url: "https://kritikasingh2004.github.io/CalNova_Gst_calculator/",
+        headerUrl: "https://github.com/Kritikasingh2004/CalNova_Gst_calculator.git",
     },
+    {
+        title: "Campus Ambassador Website",
+        description: "Website to apply for campus ambassador for Ecell at Lucknow University.",
+        header: campus,
+        tags: ["Html", "CSS", "JS"],
+        url: "https://kritikasingh2004.github.io/campus_ambassador_ecell/",
+        headerUrl: "https://github.com/Kritikasingh2004/campus_ambassador_ecell.git",
+    },
+    {
+        title: "Work on progress",
+        description: "Its a website that gives you remainder to solve your daily coding problems.",
+        tags: ["NextJS", "TailwindCSS", "Appwrite"],
+        url: "",
+        headerUrl: "",
+    },
+    {
+        title: "Coding Soon...",
+        description: "Let me cook...",
+        tags: ["Project"],
+        url: "",
+        headerUrl: "",
+    },
+
 ];

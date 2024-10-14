@@ -37,3 +37,9 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+#aboutbg {
+  background: url("../app/assets/aboutbg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

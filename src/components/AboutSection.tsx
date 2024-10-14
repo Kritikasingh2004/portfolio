@@ -1,21 +1,15 @@
 import Image from 'next/image'
 import darkbill from "../app/assets/evilbill.jpg"
 import about from "../app/assets/about.png"
-import aboutbg from "../app/assets/aboutbg.jpg"
 import { SkillPreview } from './ui/SkillPreview'
 
 const AboutSection = () => {
     return (
         <div id='about'>
-            <div className='w-full min-h-screen  flex items-center justify-center relative overflow-hidden'>
-                <Image
-                    src={aboutbg}
-                    alt='bg image'
-                    className='w-full absolute z-0 '
-                />
+            <div className='w-full min-h-screen  flex items-center justify-center  overflow-hidden' id='aboutbg'>
 
                 <div className='flex justify-center w-full z-20 '>
-                    <div className='flex flex-col w-1/2'>
+                    <div className='flex flex-col md:w-1/2 w-[90%]'>
 
                         <Image
                             src={about}
@@ -23,20 +17,20 @@ const AboutSection = () => {
                             className='w-[60%]'
                         />
                         <p className='px-6 text-yellow-300'>
-                            Hi im me and Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nesciunt sunt laudantium earum! Incidunt fuga doloribus nobis amet aliquid corrupti numquam error modi culpa.
+                            Hi, I&apos;m Kritika! I&apos;m a web developer who enjoys coding, creating beautiful websites, and diving into new stories. I love exploring how things work, from the front-end of websites to deeper layers of technology. When I&apos;m not coding, I&apos;m usually imagining myself as a superhero and saving the world.
                         </p>
                     </div>
                 </div>
             </div>
-            <div className='w-full min-h-screen  flex items-center justify-between'>
-                <div className='flex justify-end w-[30%]'>
+            <div className='w-full min-h-screen  flex items-center justify-between lg:flex-row flex-col'>
+                <div className='flex justify-end sm:w-[30%] w-full'>
                     <Image
                         src={darkbill}
                         alt='collector'
-                        className='w-[100%]'
+                        className='w-[80%] mx-auto'
                     />
                 </div>
-                <div className='flex flex-col items-center justify-center w-[65%]'>
+                <div className='flex flex-col items-center justify-center md:w-[65%] w-[90%]'>
                     <SkillPreview />
                 </div>
             </div>

@@ -5,10 +5,10 @@ import Link from "next/link";
 import { cn } from '@/lib/utils';
 
 const navItems = [
-    { name: "Home", link: "#hero", icon: <IconHome className="h-4 w-4 text-white" /> },
-    { name: "About", link: "#about", icon: <IconUser className="h-4 w-4 text-white" /> },
-    { name: "Projects", link: "#projects", icon: <IconCode className="h-4 w-4 text-white" /> },
-    { name: "Resume", link: "#resume", icon: <IconBriefcase className="h-4 w-4 text-white" /> },
+    { name: "Home", link: "#hero", icon: <IconHome className="h-4 w-4 text-yellow-300" /> },
+    { name: "About", link: "#about", icon: <IconUser className="h-4 w-4 text-yellow-300" /> },
+    { name: "Projects", link: "#projects", icon: <IconCode className="h-4 w-4 text-yellow-300" /> },
+    { name: "Resume", link: "#resume", icon: <IconBriefcase className="h-4 w-4 text-yellow-300" /> },
 ];
 
 const NavbarSection = ({ className }: { className?: string }) => {

@@ -43,7 +43,7 @@ const grid = [
     {
         title: "Firebase",
         description:
-            "I have used Firebase for authentication and database some of my projects.",
+            "I have used Firebase for authentication and database.",
     },
     {
         title: "Appwrite",
@@ -53,7 +53,7 @@ const grid = [
     {
         title: "Bootstrap",
         description:
-            "I have used Bootstrap in some of my projects.",
+            "I have used Bootstrap in some of my older projects.",
     },
     {
         title: "GitHub",
