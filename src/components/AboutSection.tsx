@@ -23,11 +23,11 @@ const AboutSection = () => {
                 </div>
             </div>
             <div className='w-full min-h-screen  flex items-center justify-between lg:flex-row flex-col'>
-                <div className='flex justify-end sm:w-[30%] w-full'>
+                <div className='flex justify-end md:w-[35%] w-full'>
                     <Image
                         src={darkbill}
                         alt='collector'
-                        className='w-[80%] mx-auto'
+                        className='w-[80%] md:w-full mx-auto'
                     />
                 </div>
                 <div className='flex flex-col items-center justify-center md:w-[65%] w-[90%]'>
