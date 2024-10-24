@@ -10,7 +10,7 @@ const ProjectSection = () => {
                 <Image
                     src={halfstar}
                     alt='star'
-                    className='w-full absolute bottom-0 z-0 animate-pulse'
+                    className='w-full absolute bottom-0 z-0 animate-flicker'
                 />
 
                 <div className='flex justify-end items-center sm:w-[70%] w-full z-50'>
