@@ -76,20 +76,20 @@ const items = [
         headerUrl: "https://github.com/Kritikasingh2004/Vacci-Time.git",
     },
     {
-        title: "HireSum FrontEnd",
-        description: "FrontEnd of a website for hiring candidates.",
-        header: hiresum,
-        tags: ["ReactJS", "CSS"],
-        url: "https://kritikasingh2004.github.io/hiresum/",
-        headerUrl: "https://github.com/Kritikasingh2004/hiresum.git",
-    },
-    {
         title: "ChatBot Frontend",
         description: "FrontEnd for a image based chatbot.",
         header: chatbot,
         tags: ["NextJS", "TailwindCSS", "Aceternity UI"],
         url: "https://chatbot-app-livid.vercel.app/",
         headerUrl: "https://github.com/Kritikasingh2004/chatbot-app.git",
+    },
+    {
+        title: "HireSum FrontEnd",
+        description: "FrontEnd of a website for hiring candidates.",
+        header: hiresum,
+        tags: ["ReactJS", "CSS"],
+        url: "https://kritikasingh2004.github.io/hiresum/",
+        headerUrl: "https://github.com/Kritikasingh2004/hiresum.git",
     },
     {
         title: "Coding Soon...",
