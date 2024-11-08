@@ -15,9 +15,9 @@ const ContactSection = () => {
                 <h2 className="md:max-w-7xl w-full text-center pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-200 font-sans">
                     Hi Download my resume!
                 </h2>
-                <button className="shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border hover:border-white hover:text-white  rounded-lg font-bold transform hover:-translate-y-1 transition duration-400 text-yellow-300 border-yellow-300">
+                <a href="/resume.pdf" download="resume" className="shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border hover:border-white hover:text-white  rounded-lg font-bold transform hover:-translate-y-1 transition duration-400 text-yellow-300 border-yellow-300">
                     Resume Here
-                </button>
+                </a>
             </div>
         </div>
     )
