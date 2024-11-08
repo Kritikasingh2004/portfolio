@@ -6,6 +6,7 @@ import vaccitime from "../../app/assets/projects/vaccitime.png"
 import codefiesta from "../../app/assets/projects/codefiesta.png"
 import hiresum from "../../app/assets/projects/hiresum.png"
 import chatbot from "../../app/assets/projects/chatbot.png"
+import litfest from "../../app/assets/projects/litfest.png"
 
 import { BentoGrid, BentoGridItem } from "../ui/bento-grid";
 
@@ -51,6 +52,14 @@ const items = [
         headerUrl: "https://github.com/Kritikasingh2004/kaizenyou.git",
     },
     {
+        title: "Litfest Website",
+        description: "The official website for the literature event of Lucknow.",
+        header: litfest,
+        tags: ["VueJS", "PicoCSS", "Firebase"],
+        url: "https://enlit.club/",
+        headerUrl: "https://github.com/Kritikasingh2004/litfest.git",
+    },
+    {
         title: "CodeFiesta Website",
         description: "Website made for a tech fest at Lucknow University.",
         header: codefiesta,
@@ -81,13 +90,6 @@ const items = [
         tags: ["NextJS", "TailwindCSS", "Aceternity UI"],
         url: "https://chatbot-app-livid.vercel.app/",
         headerUrl: "https://github.com/Kritikasingh2004/chatbot-app.git",
-    },
-    {
-        title: "Work on progress",
-        description: "Its a website that gives you remainder to solve your daily coding problems.",
-        tags: ["NextJS", "TailwindCSS", "Appwrite"],
-        url: "",
-        headerUrl: "",
     },
     {
         title: "Coding Soon...",
