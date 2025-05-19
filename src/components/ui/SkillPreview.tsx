@@ -32,7 +32,7 @@ const grid = [
   },
   {
     title: "NestJs",
-    description: "I am working on NestJs during my internship as an SDE.",
+    description: "I am working on NestJs during my internship.",
   },
   {
     title: "Typescript",

@@ -5,8 +5,8 @@ import kaizenyou from "../../app/assets/projects/kaizenyou.png";
 import vaccitime from "../../app/assets/projects/vaccitime.png";
 import codefiesta from "../../app/assets/projects/codefiesta.png";
 import hiresum from "../../app/assets/projects/hiresum.png";
-import chatbot from "../../app/assets/projects/chatbot.png";
 import litfest from "../../app/assets/projects/litfest.png";
+import campusmart from "../../app/assets/projects/campusmart.png";
 
 import { BentoGrid, BentoGridItem } from "../ui/bento-grid";
 
@@ -43,7 +43,7 @@ const items = [
     title: "Campus/mart",
     description:
       "Built a platform allowing students to buy/sell used items securely.",
-    header: kaizenyou,
+    header: campusmart,
     tags: ["NextJS", "TailwindCSS", "Appwrite"],
     url: "https://campusmart-two.vercel.app/",
     headerUrl: "https://github.com/Kritikasingh2004/campusmart.git",
@@ -80,14 +80,6 @@ const items = [
     tags: ["Firebase", "NextJS", "TailwindCSS"],
     url: "https://vacci-time.vercel.app/",
     headerUrl: "https://github.com/Kritikasingh2004/Vacci-Time.git",
-  },
-  {
-    title: "ChatBot Frontend",
-    description: "FrontEnd for a image based chatbot.",
-    header: chatbot,
-    tags: ["NextJS", "TailwindCSS", "Aceternity UI"],
-    url: "https://chatbot-app-livid.vercel.app/",
-    headerUrl: "https://github.com/Kritikasingh2004/chatbot-app.git",
   },
   {
     title: "HireSum FrontEnd",
