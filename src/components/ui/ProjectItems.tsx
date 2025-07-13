@@ -61,7 +61,7 @@ const items = [
     description: "The official website for the literature event of Lucknow.",
     header: litfest,
     tags: ["VueJS", "PicoCSS", "Firebase"],
-    url: "https://enlit.club/",
+    url: "https://litfest-gilt.vercel.app/",
     headerUrl: "https://github.com/Kritikasingh2004/litfest.git",
   },
   {

@@ -49,12 +49,21 @@ const grid = [
       "Since you have to know ReactJs to work with NextJs, I know ReactJs too.",
   },
   {
-    title: "Appwrite",
-    description: "I have used Appwrite for authentication and database.",
+    title: "Postgresql",
+    description: "I have used Postgresql while working as an SDE intern.",
+  },
+  {
+    title: "GraphQL",
+    description:
+      "I'm using GraphQL with Apollo Client for caching and state management.",
   },
   {
     title: "Firebase",
     description: "I have used Firebase for authentication and database.",
+  },
+  {
+    title: "RESTful APIs",
+    description: "I have built RESTful APIs using NestJS and PostgreSQL.",
   },
   {
     title: "Bootstrap",
@@ -64,10 +73,6 @@ const grid = [
     title: "GitHub",
     description:
       "Who doesn't know GitHub? I have used it in all of my projects.",
-  },
-  {
-    title: "VueJs",
-    description: "I have worked on a few projects based on VueJs.",
   },
   {
     title: "Html/ Css",
