@@ -44,7 +44,7 @@ const items = [
     description:
       "Built a platform allowing students to buy/sell used items securely.",
     header: campusmart,
-    tags: ["NextJS", "TailwindCSS", "Appwrite"],
+    tags: ["NextJS", "TailwindCSS", "Supabase"],
     url: "https://campusmart-two.vercel.app/",
     headerUrl: "https://github.com/Kritikasingh2004/campusmart.git",
   },
