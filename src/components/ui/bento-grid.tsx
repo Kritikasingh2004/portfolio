@@ -13,8 +13,8 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        "grid md:auto-rows-auto grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-7xl mx-auto z-50",
-        className,
+        "grid md:auto-rows-auto grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-7xl mx-auto z-50 w-[90%]",
+        className
       )}
     >
       {children}
@@ -45,7 +45,7 @@ export const BentoGridItem = ({
     <div
       className={cn(
         "row-span-1 rounded-xl  group/bento hover:shadow-[0_0_10px_rgba(253,224,71,1)] transition duration-200 shadow-input shadow-none p-4 bg-black border-yellow-300  border justify-between flex flex-col  z-50",
-        className,
+        className
       )}
     >
       {typeof header === "string" || header instanceof Object ? (

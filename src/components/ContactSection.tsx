@@ -1,25 +1,24 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 const ContactSection = () => {
   return (
     <div
-      className="w-full min-h-screen bg-black flex sm:flex-row flex-col items-center justify-center"
+      className="w-full min-h-screen bg-black flex md:flex-row flex-col items-center justify-center"
       id="resume"
     >
-      <div className="flex justify-start sm:w-[50%] w-full">
+      <div className="flex justify-end md:w-[42%] w-full">
         <Image
           src="/assets/sprig.png"
           alt="sprig"
-          className="sm:w-full w-[60%] sm:mx-0 mx-auto"
-          width={1080}
-          height={1080}
+          className="md:w-[80%] w-[60%] sm:mx-0 mx-auto"
+          width={627}
+          height={1079}
         />
       </div>
-      <div className=" flex justify-evenly items-start sm:w-[50%] w-full flex-col min-h-44">
-        <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none text-white">
-          Hi, Download My Resume!
+      <div className=" flex justify-evenly md:items-start items-center md:w-[55%] w-full flex-col overflow-hidden">
+        <span className="text-5xl md:text-[4rem] lg:text-[6rem] font-bold mt-1 leading-none text-white md:text-left text-center">
+          Hi, <span className="text-yellow-300">Download</span> My Resume!
         </span>
         <Link
           href="/resume.pdf"

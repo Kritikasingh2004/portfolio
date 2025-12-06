@@ -11,7 +11,7 @@ const FooterSection = () => {
           <>
             <h1 className="text-4xl font-semibold text-yellow-300">
               That&apos;s all about me <br />
-              <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none text-white">
+              <span className="text-5xl md:text-[6rem] font-bold mt-1 leading-none text-white">
                 Always Remember
               </span>
             </h1>

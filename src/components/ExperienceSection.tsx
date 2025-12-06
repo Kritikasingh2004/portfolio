@@ -38,7 +38,7 @@ const cards = [
   },
   {
     description: "KaizenYou",
-    title: "Web Development Intern",
+    title: "Web Dev Intern",
     src: "https://assets.aceternity.com/demos/babbu-maan.jpeg",
     ctaText: "View More",
     content: () => {
@@ -64,26 +64,34 @@ const cards = [
   },
 ];
 
-const ProjectSection = () => {
+const ExperienceSection = () => {
   return (
     <>
       <div
-        className="w-full min-h-screen bg-black flex sm:flex-row flex-col items-center justify-center relative overflow-hidden"
+        className="w-full py-16 bg-black flex sm:flex-row flex-col items-center justify-center relative overflow-hidden"
         id="projects"
       >
         <Image
           src="/assets/starbg.png"
           alt="star"
-          className="w-full absolute bottom-0 z-0 animate-flicker"
+          className="w-full absolute top-0 z-0 animate-pulse md:block hidden repeat-infinite"
           width={1920}
           height={1080}
         />
 
+        <Image
+          src="/assets/starbgMobile.png"
+          alt="star"
+          className="w-full absolute top-0 z-0 animate-pulse md:hidden block"
+          width={1080}
+          height={1920}
+        />
+
         <div className="flex flex-col justify-center items-center sm:w-[70%] w-full z-50">
           <Image
-            src="/assets/experience.jpg"
+            src="/assets/experience.png"
             alt="experience"
-            className="w-[80%]"
+            className="md:w-[80%] w-full"
             width={1366}
             height={567}
           />
@@ -94,4 +102,4 @@ const ProjectSection = () => {
   );
 };
 
-export default ProjectSection;
+export default ExperienceSection;

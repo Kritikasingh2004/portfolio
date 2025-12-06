@@ -13,19 +13,6 @@
   }
 }
 
-/*#hero {*/
-/*  background: url("/assets/background.jpg");*/
-/*  background-size: cover;*/
-/*  background-position: center;*/
-/*  background-repeat: no-repeat;*/
-/*}*/
-#aboutbg {
-  background: url("/assets/aboutbg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 @layer base {
   :root {
     --background: 0 0% 100%;

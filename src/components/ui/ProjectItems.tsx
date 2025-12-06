@@ -9,9 +9,17 @@ const ProjectItems = () => {
       <Image
         src="/assets/starbg.png"
         alt="star"
-        className="w-full absolute bottom-0 z-0 h-full animate-pulse"
+        className="w-full absolute  z-0 animate-pulse md:block hidden repeat-infinite"
         width={1920}
         height={1080}
+      />
+
+      <Image
+        src="/assets/starbgMobile.png"
+        alt="star"
+        className="w-full absolute bottom-0 z-0 animate-pulse md:hidden block"
+        width={1080}
+        height={1920}
       />
       <BentoGrid className="max-w-4xl mx-auto">
         {items.map((item, i) => (
@@ -66,23 +74,6 @@ const items = [
     tags: ["VueJS", "Bootstrap"],
     url: "https://codefiesta-chi.vercel.app/",
     headerUrl: "https://github.com/Kritikasingh2004/codefiesta.git",
-  },
-  {
-    title: "VacciTime",
-    description:
-      "A website to remind you about your child's vaccination schedule.",
-    header: "/assets/projects/vaccitime.png",
-    tags: ["Firebase", "NextJS", "TailwindCSS"],
-    url: "https://vacci-time.vercel.app/",
-    headerUrl: "https://github.com/Kritikasingh2004/Vacci-Time.git",
-  },
-  {
-    title: "HireSum FrontEnd",
-    description: "FrontEnd of a website for hiring candidates.",
-    header: "/assets/projects/hiresum.png",
-    tags: ["ReactJS", "CSS"],
-    url: "https://kritikasingh2004.github.io/hiresum/",
-    headerUrl: "https://github.com/Kritikasingh2004/hiresum.git",
   },
   {
     title: "Coding Soon...",

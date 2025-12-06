@@ -8,27 +8,33 @@ const HeroSection = () => {
       id="hero"
       className="w-full min-h-screen flex md:flex-row flex-col justify-center items-center relative"
     >
-      <div className="lg:w-2/2 md:w-[60%] sm:h-auto min-h-full w-full flex flex-col md:justify-end z-40 relative sm:mt-0 mt-11">
-        <div className="flex flex-col justify-center md:ml-10">
-          <p className="text-4xl font-semibold text-yellow-300 text-left">
-            <EncryptedText text="Hello! I am Kritika." revealDelayMs={50} />
-          </p>
+      <Image
+        src="/assets/sonicbg.png"
+        alt="sonic the hedgehog"
+        className="w-full bottom-0 absolute z-10"
+        width={1920}
+        height={1080}
+      />
+      <div className="md:w-[45%] sm:h-auto min-h-full w-full flex flex-col justify-center z-40 relative sm:mt-0 mt-11 md:ml-16">
+        <p className="md:text-4xl text-2xl font-semibold text-yellow-300 md:text-left text-center">
+          <EncryptedText text="Hello! I am Kritika." revealDelayMs={50} />
+        </p>
 
-          <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none text-white">
-            Welcome to My <span className="text-yellow-300">Portfolio!</span>
+        <span className="text-5xl md:text-[4rem] lg:text-[6rem] font-bold mt-1 leading-none text-white md:text-left text-center">
+          Welcome to My <br />
+          <span className="text-yellow-300 text-6xl md:text-[4rem] lg:text-[6rem]">
+            Portfolio!
           </span>
-        </div>
+        </span>
       </div>
-      <div className="lg:w-1/3 md:w-[40%] sm:h-fit h-screen w-full z-50">
-        <div className="bg-yellow-300 flex justify-center items-center rounded-lg w-[75%] p-2">
-          <Image
-            src="/assets/me.jpg"
-            alt="My card"
-            height={3280}
-            width={2460}
-            className="w-full z-50 shadow-md rounded-lg"
-          />
-        </div>
+      <div className="md:w-[45%] w-full z-50">
+        <Image
+          src="/assets/me.png"
+          alt="My card"
+          height={2380}
+          width={2380}
+          className="w-full z-50 shadow-md rounded-lg"
+        />
       </div>
     </div>
   );

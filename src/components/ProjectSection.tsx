@@ -4,7 +4,7 @@ const ProjectSection = () => {
   return (
     <div>
       <div
-        className="w-full min-h-screen bg-black flex sm:flex-row flex-col items-center justify-center relative overflow-hidden"
+        className="w-full min-h-screen bg-black flex sm:flex-row flex-col items-center justify-center relative "
         id="projects"
       >
         <Image
@@ -15,16 +15,16 @@ const ProjectSection = () => {
           height={1080}
         />
 
-        <div className="flex justify-end items-center sm:w-[70%] w-full z-50">
+        <div className="flex sm:justify-end justify-center items-center sm:w-[70%] w-full z-50">
           <Image
             src="/assets/project.png"
             alt="project"
-            className="md:w-[60%] w-[90%]"
-            width={1920}
-            height={457}
+            className="md:w-[60%] w-full"
+            width={1024}
+            height={313}
           />
         </div>
-        <div className="flex justify-start sm:w-[30%] w-full z-50">
+        <div className="flex sm:justify-start justify-center sm:w-[30%] w-full z-50">
           <Image
             src="/assets/collector.png"
             alt="collector"
