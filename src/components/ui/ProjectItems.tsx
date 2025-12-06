@@ -1,12 +1,5 @@
 import React from "react";
-import star from "../../app/assets/starbg.png";
 import Image from "next/image";
-import kaizenyou from "../../app/assets/projects/kaizenyou.png";
-import vaccitime from "../../app/assets/projects/vaccitime.png";
-import codefiesta from "../../app/assets/projects/codefiesta.png";
-import hiresum from "../../app/assets/projects/hiresum.png";
-import litfest from "../../app/assets/projects/litfest.png";
-import campusmart from "../../app/assets/projects/campusmart.png";
 
 import { BentoGrid, BentoGridItem } from "../ui/bento-grid";
 
@@ -14,9 +7,11 @@ const ProjectItems = () => {
   return (
     <div className="w-full min-h-screen relative bg-black pb-20">
       <Image
-        src={star}
+        src="/assets/starbg.png"
         alt="star"
         className="w-full absolute bottom-0 z-0 h-full animate-pulse"
+        width={1920}
+        height={1080}
       />
       <BentoGrid className="max-w-4xl mx-auto">
         {items.map((item, i) => (
@@ -43,7 +38,7 @@ const items = [
     title: "Campus/mart",
     description:
       "Built a platform allowing students to buy/sell used items securely.",
-    header: campusmart,
+    header: "/assets/projects/campusmart.png",
     tags: ["NextJS", "TailwindCSS", "Supabase"],
     url: "https://campusmart-two.vercel.app/",
     headerUrl: "https://github.com/Kritikasingh2004/campusmart.git",
@@ -51,7 +46,7 @@ const items = [
   {
     title: "KaizenYou Website",
     description: "The official website for a edtech startup KaizenYou.",
-    header: kaizenyou,
+    header: "/assets/projects/kaizenyou.png",
     tags: ["NextJS", "TailwindCSS", "GSAP"],
     url: "https://www.kaizenyou.in/",
     headerUrl: "https://github.com/Kritikasingh2004/kaizenyou.git",
@@ -59,7 +54,7 @@ const items = [
   {
     title: "Litfest Website",
     description: "The official website for the literature event of Lucknow.",
-    header: litfest,
+    header: "/assets/projects/litfest.png",
     tags: ["VueJS", "PicoCSS", "Firebase"],
     url: "https://litfest-gilt.vercel.app/",
     headerUrl: "https://github.com/Kritikasingh2004/litfest.git",
@@ -67,7 +62,7 @@ const items = [
   {
     title: "CodeFiesta Website",
     description: "Website made for a tech fest at Lucknow University.",
-    header: codefiesta,
+    header: "/assets/projects/codefiesta.png",
     tags: ["VueJS", "Bootstrap"],
     url: "https://codefiesta-chi.vercel.app/",
     headerUrl: "https://github.com/Kritikasingh2004/codefiesta.git",
@@ -76,7 +71,7 @@ const items = [
     title: "VacciTime",
     description:
       "A website to remind you about your child's vaccination schedule.",
-    header: vaccitime,
+    header: "/assets/projects/vaccitime.png",
     tags: ["Firebase", "NextJS", "TailwindCSS"],
     url: "https://vacci-time.vercel.app/",
     headerUrl: "https://github.com/Kritikasingh2004/Vacci-Time.git",
@@ -84,7 +79,7 @@ const items = [
   {
     title: "HireSum FrontEnd",
     description: "FrontEnd of a website for hiring candidates.",
-    header: hiresum,
+    header: "/assets/projects/hiresum.png",
     tags: ["ReactJS", "CSS"],
     url: "https://kritikasingh2004.github.io/hiresum/",
     headerUrl: "https://github.com/Kritikasingh2004/hiresum.git",
