@@ -7,7 +7,7 @@ const ContactSection = () => {
       className="w-full min-h-screen bg-black flex md:flex-row flex-col items-center justify-center"
       id="resume"
     >
-      <div className="flex justify-end md:w-[42%] w-full">
+      <div className="flex justify-center md:w-[42%] w-full">
         <Image
           src="/assets/sprig.png"
           alt="sprig"
