@@ -21,8 +21,9 @@ const HeroSection = () => {
         </p>
 
         <span className="text-5xl md:text-[4rem] lg:text-[6rem] font-bold mt-1 leading-none text-white md:text-left text-center">
-          Welcome to My <br />
-          <span className="text-yellow-300 text-6xl md:text-[4rem] lg:text-[6rem]">
+          Welcome to My
+          <span className="text-yellow-300 text-6xl md:text-[4rem] lg:text-[6rem] md:inline-block block">
+            {" "}
             Portfolio!
           </span>
         </span>

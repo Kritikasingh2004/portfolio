@@ -7,7 +7,7 @@ const cards = [
   {
     description: "Kyte Research Pte. Ltd.",
     title: "SDE Intern",
-    src: "https://assets.aceternity.com/demos/lana-del-rey.jpeg",
+    src: "/assets/experience/kyte.png",
     ctaText: "View More",
     content: () => {
       return (
@@ -39,7 +39,7 @@ const cards = [
   {
     description: "KaizenYou",
     title: "Web Dev Intern",
-    src: "https://assets.aceternity.com/demos/babbu-maan.jpeg",
+    src: "/assets/experience/kaizenyou.png",
     ctaText: "View More",
     content: () => {
       return (

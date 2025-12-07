@@ -9,10 +9,10 @@ export function SkillPreview() {
             key={feature.title}
             className="relative p-6 rounded-3xl overflow-hidden hover:shadow-[0_0_10px_rgba(253,224,71,1)] border border-yellow-300 transition-shadow duration-300 cursor-pointer"
           >
-            <p className="text-base font-bold text-yellow-300 relative z-20">
+            <p className="text-xl font-bold text-yellow-300 relative z-20">
               {feature.title}
             </p>
-            <p className="text-neutral-400 mt-4 text-base font-normal relative z-20">
+            <p className=" mt-4 text-base font-medium relative z-20">
               {feature.description}
             </p>
           </div>

@@ -135,7 +135,7 @@ export default function ExperienceCards({ cards }: { cards: Card[] }) {
               <div className="">
                 <motion.h3
                   layoutId={`title-${card.title}-${id}`}
-                  className="text-lg font-bold text-yellow-300 text-left"
+                  className="md:text-xl text-lg font-bold text-yellow-300 text-left"
                 >
                   {card.title}
                 </motion.h3>

@@ -71,7 +71,7 @@ export const BentoGridItem = ({
 
       <div className="group-hover/bento:translate-x-2 transition duration-200">
         <div className="flex justify-between items-center mt-5 mb-2">
-          <div className="font-semibold text-yellow-300 text-lg">{title}</div>
+          <div className="font-bold text-yellow-300 text-xl">{title}</div>
 
           <div className="flex items-center">
             {url && (
@@ -86,13 +86,13 @@ export const BentoGridItem = ({
             )}
           </div>
         </div>
-        <div className="font-normal">{description}</div>
+        <div className="font-medium">{description}</div>
         <div className="flex justify-start flex-wrap mt-2">
           {tags &&
             tags.map((tag, index) => (
               <div
                 key={index}
-                className="mr-1 border border-neutral-600 text-xs font-semibold text-neutral-600 px-2 py-1 rounded-xl mt-2"
+                className="mr-1 border border-neutral-400 text-xs font-medium text-neutral-400 px-2 py-1 rounded-xl mt-2"
               >
                 {tag}
               </div>

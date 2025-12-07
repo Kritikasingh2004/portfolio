@@ -43,11 +43,11 @@ export default ProjectItems;
 
 const items = [
   {
-    title: "Campus/mart",
+    title: "Campusmart",
     description:
       "Built a platform allowing students to buy/sell used items securely.",
     header: "/assets/projects/campusmart.png",
-    tags: ["NextJS", "TailwindCSS", "Supabase"],
+    tags: ["NextJS", "Supabase"],
     url: "https://campusmart-two.vercel.app/",
     headerUrl: "https://github.com/Kritikasingh2004/campusmart.git",
   },
@@ -68,12 +68,13 @@ const items = [
     headerUrl: "https://github.com/Kritikasingh2004/litfest.git",
   },
   {
-    title: "CodeFiesta Website",
-    description: "Website made for a tech fest at Lucknow University.",
-    header: "/assets/projects/codefiesta.png",
-    tags: ["VueJS", "Bootstrap"],
-    url: "https://codefiesta-chi.vercel.app/",
-    headerUrl: "https://github.com/Kritikasingh2004/codefiesta.git",
+    title: "Signalist",
+    description:
+      "A platform to get latest Stock updates along with news and analysis straight to your inbox.",
+    header: "/assets/projects/signalist.png",
+    tags: ["Inngest", "MongoDB"],
+    url: "https://the-signalist.vercel.app/",
+    headerUrl: "https://github.com/Kritikasingh2004/signalist-stock-tracker",
   },
   {
     title: "Coding Soon...",
