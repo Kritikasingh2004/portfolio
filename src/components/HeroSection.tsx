@@ -34,7 +34,7 @@ const HeroSection = () => {
           alt="My card"
           height={2380}
           width={2380}
-          className="w-full z-50 shadow-md rounded-lg"
+          className="md:w-[90%] w-full z-50 shadow-md rounded-lg"
         />
       </div>
     </div>
