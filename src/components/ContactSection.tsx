@@ -11,7 +11,7 @@ const ContactSection = () => {
         <Image
           src="/assets/sprig.png"
           alt="sprig"
-          className="md:w-[80%] w-[60%] md:mx-0 mx-auto"
+          className="lg:w-[75%] md:w-[80%] w-[60%] md:mx-0 mx-auto"
           width={627}
           height={1079}
         />
