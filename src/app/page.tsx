@@ -1,5 +1,6 @@
 import AboutSection from "@/components/AboutSection";
 import ContactSection from "@/components/ContactSection";
+import ExperienceSection from "@/components/ExperienceSection";
 import FooterSection from "@/components/FooterSection";
 import HeroSection from "@/components/HeroSection";
 import ProjectSection from "@/components/ProjectSection";
@@ -11,13 +12,10 @@ export default function Home() {
     <>
       <NavbarSection />
       <HeroSection />
-      {/* find a skill table */}
       <AboutSection />
-      {/* fix this */}
       <ProjectSection />
-      {/* make this normal hover cards instead if clickble */}
       <ProjectItems />
-      {/* make and add resume */}
+      <ExperienceSection />
       <ContactSection />
       <FooterSection />
     </>

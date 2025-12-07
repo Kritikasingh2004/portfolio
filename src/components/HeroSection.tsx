@@ -1,35 +1,44 @@
-import Image from 'next/image'
-import welcome from "../app/assets/message.png"
-import card from "../app/assets/mecard.png"
-import flickMessage from "../app/assets/message_flciker.png"
+import Image from "next/image";
+import { EncryptedText } from "@/components/ui/encrypted-text";
+import React from "react";
 
 const HeroSection = () => {
-    return (
-        <div id='hero' className='w-full min-h-screen flex md:flex-row flex-col justify-center items-center relative'>
+  return (
+    <div
+      id="hero"
+      className="w-full min-h-screen flex md:flex-row flex-col justify-center items-center relative"
+    >
+      <Image
+        src="/assets/sonicbg.png"
+        alt="sonic the hedgehog"
+        className="w-full bottom-0 absolute z-10"
+        width={1920}
+        height={1080}
+      />
+      <div className="md:w-[45%] sm:h-auto min-h-full w-full flex flex-col justify-center z-40 relative sm:mt-0 mt-11 md:ml-16">
+        <p className="md:text-4xl text-2xl font-semibold text-yellow-300 md:text-left text-center">
+          <EncryptedText text="Hello! I am Kritika." revealDelayMs={50} />
+        </p>
 
-            <div className='lg:w-1/2 md:w-[60%] sm:h-auto min-h-full w-full flex md:justify-end justify-center items-center z-40 relative sm:mt-0 mt-11'>
-                <Image
-                    src={welcome}
-                    alt='welcome message'
-                    className=' lg:w-[90%] md:w-[97%] w-full z-40 '
-                />
-                <Image
-                    src={flickMessage}
-                    alt='welcome message'
-                    className=' w-[90%] z-50 animate-flicker absolute'
-                />
-            </div>
-            <div className='lg:w-1/2 md:w-[40%] sm:h-auto h-screen w-full z-50'>
-                <Image
-                    src={card}
-                    alt='My card'
-                    height={500}
-                    width={500}
-                    className='lg:w-[45%] md:w-[70%] w-[75%] mx-auto z-50 shadow-md rounded-sm'
-                />
-            </div>
-        </div>
-    )
-}
+        <span className="text-5xl md:text-[4rem] lg:text-[6rem] font-bold mt-1 leading-none text-white md:text-left text-center">
+          Welcome to My
+          <span className="text-yellow-300 text-6xl md:text-[4rem] lg:text-[6rem] md:inline-block block">
+            {" "}
+            Portfolio!
+          </span>
+        </span>
+      </div>
+      <div className="md:w-[45%] w-full z-50">
+        <Image
+          src="/assets/me.png"
+          alt="My card"
+          height={2380}
+          width={2380}
+          className="w-full z-50 shadow-md rounded-lg"
+        />
+      </div>
+    </div>
+  );
+};
 
-export default HeroSection
+export default HeroSection;
