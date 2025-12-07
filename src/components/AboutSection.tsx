@@ -36,10 +36,11 @@ const AboutSection = () => {
               Hi, I&apos;m Kritika! I&apos;m a developer who enjoys coding,
               creating crazy websites, and diving into new stories. I love
               exploring how things work, from the front-end to deeper layers of
-              technology.{" "}
+              technology. When I'm not coding,{" "}
               <EncryptedText
-                text="When I'm not coding, I'm usually being a
+                text="I'm usually being a
               superhero and saving the world."
+                revealDelayMs={20}
               />
             </p>
           </div>
