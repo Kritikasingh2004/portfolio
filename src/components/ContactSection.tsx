@@ -1,13 +1,26 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const ContactSection = () => {
   return (
     <div
-      className="w-full min-h-screen bg-black flex md:flex-row flex-col items-center justify-center"
+      className=" w-full min-h-screen bg-black flex md:flex-row flex-col items-center justify-center"
       id="resume"
     >
-      <div className="flex justify-center md:w-[42%] w-full">
+      <motion.div
+        initial={{ opacity: -1, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.3,
+          opacity: { delay: 0.5 },
+          duration: 0.8,
+          ease: "easeInOut",
+        }}
+        className="overflow-x-hidden flex justify-center md:w-[42%] w-full"
+      >
         <Image
           src="/assets/sprig.webp"
           alt="sprig"
@@ -15,8 +28,17 @@ const ContactSection = () => {
           width={627}
           height={1079}
         />
-      </div>
-      <div className=" flex justify-evenly md:items-start items-center md:w-[55%] w-full flex-col overflow-hidden">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.3,
+          duration: 0.8,
+          ease: "easeInOut",
+        }}
+        className=" flex justify-evenly md:items-start items-center md:w-[55%] w-full flex-col overflow-hidden"
+      >
         <span className="text-5xl md:text-[4rem] lg:text-[6rem] font-bold mt-1 leading-none text-white md:text-left text-center">
           Hi, <span className="text-yellow-300">Download</span> My Resume!
         </span>
@@ -27,7 +49,7 @@ const ContactSection = () => {
         >
           Resume Here
         </Link>
-      </div>
+      </motion.div>
     </div>
   );
 };

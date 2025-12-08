@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const FooterSection = () => {
   return (
-    <div className="flex flex-col overflow-hidden bg-black z-[600]">
+    <div className="flex flex-col overflow-hidden  z-[600]">
       <ContainerScroll
         titleComponent={
           <>

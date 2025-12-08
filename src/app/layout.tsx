@@ -76,7 +76,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${archivo.className} antialiased bg-black text-white`}>
+      <body
+        className={`${archivo.className} antialiased bg-black text-white overflow-x-hidden`}
+      >
         {children}
       </body>
     </html>

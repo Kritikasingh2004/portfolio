@@ -1,7 +1,7 @@
 "use client";
-
 import Image from "next/image";
 import ExperienceCards from "@/components/ui/ExperienceCards";
+import { motion } from "framer-motion";
 
 const cards = [
   {
@@ -87,7 +87,16 @@ const ExperienceSection = () => {
           height={1920}
         />
 
-        <div className="flex flex-col justify-center items-center sm:w-[70%] w-full z-50">
+        <motion.div
+          initial={{ opacity: 0.5, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.3,
+            duration: 0.8,
+            ease: "easeInOut",
+          }}
+          className="flex flex-col justify-center items-center sm:w-[70%] w-full z-50"
+        >
           <Image
             src="/assets/experience.webp"
             alt="experience"
@@ -96,7 +105,7 @@ const ExperienceSection = () => {
             height={567}
           />
           <ExperienceCards cards={cards} />
-        </div>
+        </motion.div>
       </div>
     </>
   );

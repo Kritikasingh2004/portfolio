@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import { SkillPreview } from "./ui/SkillPreview";
 import { EncryptedText } from "@/components/ui/encrypted-text";
+import { motion } from "framer-motion";
 
 const AboutSection = () => {
   return (
@@ -24,7 +27,16 @@ const AboutSection = () => {
           height={1920}
         />
         <div className="flex justify-center w-full z-20 ">
-          <div className="flex flex-col lg:w-1/2 md:w-2/3 w-[90%]">
+          <motion.div
+            className="flex flex-col lg:w-1/2 md:w-2/3 w-[90%]"
+            initial={{ opacity: 0.5, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.3,
+              duration: 0.8,
+              ease: "easeInOut",
+            }}
+          >
             <Image
               src="/assets/about.webp"
               alt="about"
@@ -43,11 +55,20 @@ const AboutSection = () => {
                 revealDelayMs={20}
               />
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
       <div className="w-full min-h-screen  flex items-center justify-between lg:flex-row flex-col">
-        <div className="flex justify-end md:w-[35%] w-full">
+        <motion.div
+          className="flex justify-end md:w-[35%] w-full overflow-x-hidden"
+          initial={{ opacity: 0.5, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{
+            delay: 0.3,
+            duration: 0.8,
+            ease: "easeInOut",
+          }}
+        >
           <Image
             src="/assets/shadow.webp"
             alt="Shadow the hedgehog"
@@ -55,10 +76,19 @@ const AboutSection = () => {
             width={652}
             height={975}
           />
-        </div>
-        <div className="flex flex-col items-center justify-center md:w-[65%] w-[90%]">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{
+            delay: 0.3,
+            duration: 0.8,
+            ease: "easeInOut",
+          }}
+          className="flex flex-col items-center justify-center md:w-[65%] w-[90%]"
+        >
           <SkillPreview />
-        </div>
+        </motion.div>
       </div>
     </div>
   );
