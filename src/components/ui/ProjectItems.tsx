@@ -7,7 +7,7 @@ const ProjectItems = () => {
   return (
     <div className="w-full min-h-screen relative bg-black pb-20">
       <Image
-        src="/assets/starbg.png"
+        src="/assets/starbg.webp"
         alt="star"
         className="w-full absolute  z-0 animate-pulse md:block hidden repeat-infinite"
         width={1920}
@@ -15,7 +15,7 @@ const ProjectItems = () => {
       />
 
       <Image
-        src="/assets/starbgMobile.png"
+        src="/assets/starbgMobile.webp"
         alt="star"
         className="w-full absolute bottom-0 z-0 animate-pulse md:hidden block"
         width={1080}
@@ -46,7 +46,7 @@ const items = [
     title: "Campusmart",
     description:
       "Built a platform allowing students to buy/sell used items securely.",
-    header: "/assets/projects/campusmart.png",
+    header: "/assets/projects/campusmart.webp",
     tags: ["NextJS", "Supabase"],
     url: "https://campusmart-two.vercel.app/",
     headerUrl: "https://github.com/Kritikasingh2004/campusmart.git",
@@ -54,7 +54,7 @@ const items = [
   {
     title: "KaizenYou Website",
     description: "The official website for a edtech startup KaizenYou.",
-    header: "/assets/projects/kaizenyou.png",
+    header: "/assets/projects/kaizenyou.webp",
     tags: ["NextJS", "TailwindCSS", "GSAP"],
     url: "https://www.kaizenyou.in/",
     headerUrl: "https://github.com/Kritikasingh2004/kaizenyou.git",
@@ -62,7 +62,7 @@ const items = [
   {
     title: "Litfest Website",
     description: "The official website for the literature event of Lucknow.",
-    header: "/assets/projects/litfest.png",
+    header: "/assets/projects/litfest.webp",
     tags: ["VueJS", "PicoCSS", "Firebase"],
     url: "https://litfest-gilt.vercel.app/",
     headerUrl: "https://github.com/Kritikasingh2004/litfest.git",
@@ -71,7 +71,7 @@ const items = [
     title: "Signalist",
     description:
       "A platform to get latest Stock updates along with news and analysis straight to your inbox.",
-    header: "/assets/projects/signalist.png",
+    header: "/assets/projects/signalist.webp",
     tags: ["Inngest", "MongoDB"],
     url: "https://the-signalist.vercel.app/",
     headerUrl: "https://github.com/Kritikasingh2004/signalist-stock-tracker",

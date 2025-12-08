@@ -9,7 +9,7 @@ const ContactSection = () => {
     >
       <div className="flex justify-center md:w-[42%] w-full">
         <Image
-          src="/assets/sprig.png"
+          src="/assets/sprig.webp"
           alt="sprig"
           className="lg:w-[75%] md:w-[80%] w-[60%] md:mx-0 mx-auto"
           width={627}

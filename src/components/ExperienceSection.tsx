@@ -7,7 +7,7 @@ const cards = [
   {
     description: "Kyte Research Pte. Ltd.",
     title: "SDE Intern",
-    src: "/assets/experience/kyte.png",
+    src: "/assets/experience/kyte.webp",
     ctaText: "View More",
     content: () => {
       return (
@@ -39,7 +39,7 @@ const cards = [
   {
     description: "KaizenYou",
     title: "Web Dev Intern",
-    src: "/assets/experience/kaizenyou.png",
+    src: "/assets/experience/kaizenyou.webp",
     ctaText: "View More",
     content: () => {
       return (
@@ -72,7 +72,7 @@ const ExperienceSection = () => {
         id="projects"
       >
         <Image
-          src="/assets/starbg.png"
+          src="/assets/starbg.webp"
           alt="star"
           className="w-full absolute top-0 z-0 animate-pulse md:block hidden repeat-infinite"
           width={1920}
@@ -80,7 +80,7 @@ const ExperienceSection = () => {
         />
 
         <Image
-          src="/assets/starbgMobile.png"
+          src="/assets/starbgMobile.webp"
           alt="star"
           className="w-full absolute top-0 z-0 animate-pulse md:hidden block"
           width={1080}
@@ -89,7 +89,7 @@ const ExperienceSection = () => {
 
         <div className="flex flex-col justify-center items-center sm:w-[70%] w-full z-50">
           <Image
-            src="/assets/experience.png"
+            src="/assets/experience.webp"
             alt="experience"
             className="md:w-[80%] w-full"
             width={1366}

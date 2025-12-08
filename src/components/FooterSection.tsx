@@ -19,7 +19,7 @@ const FooterSection = () => {
         }
       >
         <Image
-          src="/assets/bill.png"
+          src="/assets/bill.webp"
           alt="bill cipher"
           height={1080}
           width={1080}

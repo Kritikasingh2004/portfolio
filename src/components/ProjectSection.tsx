@@ -8,7 +8,7 @@ const ProjectSection = () => {
         id="projects"
       >
         <Image
-          src="/assets/halfstar.png"
+          src="/assets/halfstar.webp"
           alt="star"
           className="w-full absolute bottom-0 z-0 animate-flicker"
           width={1920}
@@ -17,7 +17,7 @@ const ProjectSection = () => {
 
         <div className="flex sm:justify-end justify-center items-center sm:w-[70%] w-full z-50">
           <Image
-            src="/assets/project.png"
+            src="/assets/project.webp"
             alt="project"
             className="md:w-[60%] w-full"
             width={1024}
@@ -26,7 +26,7 @@ const ProjectSection = () => {
         </div>
         <div className="flex sm:justify-start justify-center sm:w-[30%] w-full z-50">
           <Image
-            src="/assets/collector.png"
+            src="/assets/collector.webp"
             alt="collector"
             className="sm:w-full w-[60%] sm:mx-0 mx-auto"
             width={591}

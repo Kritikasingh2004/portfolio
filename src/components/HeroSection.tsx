@@ -9,11 +9,12 @@ const HeroSection = () => {
       className="w-full min-h-screen flex md:flex-row flex-col justify-center items-center relative"
     >
       <Image
-        src="/assets/sonicbg.png"
+        src="/assets/sonicbg.webp"
         alt="sonic the hedgehog"
         className="w-full bottom-0 absolute z-10"
-        width={1920}
-        height={1080}
+        width={1864}
+        height={1049}
+        priority
       />
       <div className="md:w-[45%] sm:h-auto min-h-full w-full flex flex-col justify-center z-40 relative sm:mt-0 mt-11 md:ml-16">
         <p className="md:text-4xl text-2xl font-semibold text-yellow-300 md:text-left text-center">
@@ -30,11 +31,12 @@ const HeroSection = () => {
       </div>
       <div className="md:w-[45%] w-full z-50">
         <Image
-          src="/assets/me.png"
+          src="/assets/me.webp"
           alt="My card"
-          height={2380}
-          width={2380}
+          height={755}
+          width={755}
           className="md:w-[90%] w-full z-50 shadow-md rounded-lg"
+          priority
         />
       </div>
     </div>

@@ -14,9 +14,9 @@ interface Card {
 
 export default function ExperienceCards({ cards }: { cards: Card[] }) {
   const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
-    null
+    null,
   );
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLDivElement>(null!);
   const id = useId();
 
   useEffect(() => {
@@ -56,7 +56,7 @@ export default function ExperienceCards({ cards }: { cards: Card[] }) {
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="relative w-[90%] md:w-full max-w-[500px] p-10 h-fit max-h-[90%]  flex flex-col bg-black  rounded-3xl border border-yellow-300 shadow-[0_0_10px_rgba(253,224,71,1)] overflow-hidden"
+              className="relative w-full max-w-[500px] p-10 h-full md:h-fit md:max-h-[90%]  flex flex-col bg-black  sm:rounded-3xl border border-yellow-300 shadow-[0_0_10px_rgba(253,224,71,1)] overflow-hidden"
             >
               <motion.button
                 key={`button-${active.title}-${id}`}
@@ -102,7 +102,7 @@ export default function ExperienceCards({ cards }: { cards: Card[] }) {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="h-fit flex flex-col items-start gap-4 overflow-auto [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
+                    className="h-40 md:h-fit flex flex-col items-start gap-4 overflow-auto [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
                   >
                     {typeof active.content === "function"
                       ? active.content()
@@ -114,7 +114,7 @@ export default function ExperienceCards({ cards }: { cards: Card[] }) {
           </div>
         ) : null}
       </AnimatePresence>
-      <ul className="w-[95%] max-w-2xl mx-auto md:w-full gap-4">
+      <ul className="max-w-2xl mx-auto w-full gap-4">
         {cards.map((card) => (
           <motion.div
             layoutId={`card-${card.title}-${id}`}
@@ -135,7 +135,7 @@ export default function ExperienceCards({ cards }: { cards: Card[] }) {
               <div className="">
                 <motion.h3
                   layoutId={`title-${card.title}-${id}`}
-                  className="md:text-xl text-lg font-bold text-yellow-300 text-left"
+                  className="text-lg font-bold text-yellow-300 text-left"
                 >
                   {card.title}
                 </motion.h3>

@@ -1,0 +1,10 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Disallow access to API routes
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://kritika.is-a.dev/sitemap.xml
+
