@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     default: "The Great Portfolio",
     template: "%s | Kritika Singh",
   },
-  description: "Portfolio of Kritika Singh - Developer and Superhero.",
+  description: "This portfolio belongs to Kritika Singh.",
   keywords: [
     "Kritika Singh",
     "Software Developer",
